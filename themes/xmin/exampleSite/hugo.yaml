@@ -1,7 +1,7 @@
-baseurl: "https://c-geng.com"  # please update this to your actual URL
-languageCode: "zh"
+baseurl: "https://example.org/"  # please update this to your actual URL
+languageCode: "en-us"
 title: "A minimal Hugo website"
-theme: "xmin"
+theme: "hugo-xmin"
 googleAnalytics: ""
 disqusShortname: ""
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
@@ -50,6 +50,3 @@ markup:
           inline:
           - - \(
             - \)
-caches:
-  images:
-    dir: :cacheDir/images
