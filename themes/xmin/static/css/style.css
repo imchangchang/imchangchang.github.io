@@ -6,8 +6,14 @@ body {
 }
 
 /* header and footer areas */
-.menu { padding: 0; }
+.menu { 
+  padding: 0; 
+  list-style: none;
+}
 .menu li { display: inline-block; }
+.menu li::marker{
+  display: none;
+}
 .article-meta, .menu a {
   text-decoration: none;
   background: #eee;
