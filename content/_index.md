@@ -3,7 +3,7 @@ title: Home
 ---
 
 
-<img src="images/avatar.png" style="max-width:15%;min-width:40px;float:right;"/>
+<img src="images/avatar.jpg" style="max-width:15%;min-width:40px;float:right;"/>
 
 # 耿畅 
 
