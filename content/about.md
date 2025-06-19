@@ -2,6 +2,11 @@
 title: About
 ---
 
+> 在机器人行业，工程师大致可分为三类。
+> * 技术型工程师专注于深入钻研现有技术，如嵌入式系统，他们热衷于理解并掌握技术细节。
+> * 产品型工程师则关注技术如何落地，他们需要深刻理解产品从概念到量产的全过程，对技术与产品都有深厚的认知，这类工程师在机器人行业极为关键，因为他们要决定何种技术能支持量产，满足用户需求并实现大规模生产。
+> * 研究型工程师通常拥有深厚的技术背景，他们关注前沿技术如VLA，致力于通过论文或技术报告等形式提出创新想法，而不一定关心产品化。
+
 **XMin** is the first Hugo theme I have designed. The original reason that I wrote it was I needed a minimal example of Hugo themes when I was writing the  [**blogdown**](https://github.com/rstudio/blogdown) book. Basically I wanted a simple theme that supports a navigation menu, a home page, other single pages, lists of pages, blog posts, categories, tags, and RSS. That is all. Nothing fancy. In terms of CSS and JavaScript, I really want to keep them minimal. In fact, this theme does not contain any JavaScript code at all, although on this example website I did introduce some JavaScript code (still relatively simple anyway). The theme does not contain any images, either, and is pretty much a plain-text theme.
 
 The theme name "XMin" can be interpreted as "**X**ie's **Min**imal theme" (Xie is my last name) or "e**X**tremely **Min**imal theme".
