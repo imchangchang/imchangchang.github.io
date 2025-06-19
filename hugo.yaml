@@ -27,8 +27,7 @@ menu:
       weight: 4
 
 params:
-  #description: "A website built through Hugo and blogdown."
-  footer: "&copy; [GENG Chang](https://c-geng.com) 2015 -- {Year} | [Github](https://github.com/imchangchang)"
+  footer: "&copy; [GENG Chang](https://c-geng.com) 2015 -- {Year} | [Github](https://github.com/imchangchang) | [Gitee](https://gitee.com/imchangchang) | [Linkin](https://www.linkedin.com/in/imchangchang)"
 
 markup:
   highlight:

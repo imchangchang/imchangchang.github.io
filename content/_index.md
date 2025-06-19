@@ -2,12 +2,9 @@
 title: Home
 ---
 
-
-<img src="images/avatar.jpg" style="max-width:15%;min-width:40px;float:right;margin-right: 10%;"/>
-
-# 耿畅 
-技术型工程师(60%) + 产品型工程师(40%)
-# Experience
+## 耿畅 
+济南 | 15820762341 | imchangchang@gmail.com | [Github](https://github.com/imchangchang) | [Gitee](https://gitee.com/imchangchang) | [Linkin](https://www.linkedin.com/in/imchangchang)
+#### Experience
 - 嵌入式软件专家 / 嵌入式负责人 · 2022年2月-至今  
   [**深圳市赛尔智控科技有限公司**](https://shareuav.cn/) | **混合办公**  | 济南&深圳，大部分时间在济南
   * Embedded Software Team Leader
@@ -34,12 +31,12 @@ title: Home
   * System Architect and Software Middle layer for DJI Flight Controller
   * System Engineer for Phantom4RTK
   
-# Education
+#### Education
 - 本科 · 电子科学与技术（固体电子工程） · 2021年9月-2015年6月  
   [**电子科技大学**](https://www.uestc.edu.cn/) | 成都
 
-# Skill
-- 编程语言
+#### Skill & Knowledge
+编程语言
 |技能 |掌握程度|
 |-|-|
 |C / MCU|经验丰富·高效自主|
@@ -48,25 +45,25 @@ title: Home
 |Python|熟练应用 · 需辅助验证|
 |Makefile/CMake|熟练应用 · 需辅助验证|
 |Bash|基础实践 · 依赖支持|
-- 软件系统/中间件/框架
+软件系统/中间件/框架
 |技能 |掌握程度|
 |-|-|
 |RTOS:FreeRTOS & RT-Thread & Nuttx|熟练应用 · 需辅助验证|
 |ROS1|熟练应用 · 需辅助验证|
 |ROS2|认知阶段 · 实操高风险|
-- 机器人算法
+机器人算法
 |技能 |掌握程度|
 |-|-|
 |激光SLAM算法|工程实践能力较强，算法理论较弱, 可快速落地各类算法|
-- SOC/芯片外设
+SOC/芯片外设
 |技能 |掌握程度|
 |-|-|
 |Simple PCB Design|基础实践 · 依赖支持|
-- 硬件相关
+硬件相关
 |技能 |掌握程度|
 |-|-|
 |Simple PCB Design|基础实践 · 依赖支持|
-- 结构相关
+结构相关
 |技能 |掌握程度|
 |-|-|
 |SolidWorks|认知阶段 · 实操高风险|
