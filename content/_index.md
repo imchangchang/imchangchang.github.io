@@ -3,7 +3,13 @@ title: Resume
 ---
 
 ## 耿畅 
-济南 | 15820762341 | imchangchang@gmail.com | [Github](https://github.com/imchangchang) | [Gitee](https://gitee.com/imchangchang) | [Linkin](https://www.linkedin.com/in/imchangchang)
+
+济南 | 15820762341 | 10年工作经验 |imchangchang@gmail.com | [Github](https://github.com/imchangchang) | [Gitee](https://gitee.com/imchangchang) | [Linkin](https://www.linkedin.com/in/imchangchang)
+
+* 60%技术型工程师 + 40%产品型工程师，期望碰到技术氛围好的团队，可以做好的产品
+* 擅长0-80%，不畏惧学习新知识，勇于接受挑战
+* 动手能力强，具备实现一整套硬件产品的能力
+
 #### Experience
 - 嵌入式软件专家 / 嵌入式负责人 · 2022年2月-至今 · 3年+  
   [**深圳市赛尔智控科技有限公司**](https://shareuav.cn/) | **混合办公**  | 济南&深圳，大部分时间在济南
@@ -36,30 +42,38 @@ title: Resume
 - Software Engineer · 2020年8月-2021年5月 · 10个月  
   [**Keurig Dr Pepper**](https://www.keurigdrpepper.com/)  | **现场办公**  | 深圳
   * 即热式咖啡机产品 [**K-Express Essentials**](https://www.amazon.com/Keurig-K-Express-Essentials-Single-Coffee/dp/B0BMPT81GW)
-    * 设计缺水监测算法：
+    * 设计缺水监测算法并落地：
       * 此产品设计采用水气路共用的设计，使用探针来检测水位，需要处理不同硬度的水（北美不同地区水质差异较大，且还有使用RO水的情况，ADC数值在不同水质下有很大差异）；以及水气路切换在管路内产生气泡的问题。
-      * 设计了一套基于状态的缺水检测方法，并且加入水泡检测和破坏功能。最终该功能通过产品验收并上市。上市后未收到相关客诉。
+      * 初始方案设计是单纯的基于ADC检测，这套方案当时误判率非常高，项目当时卡在这个功能上
+      * 接手后经过大量实验和测试，最终在工厂出差晚上在酒店的时候灵机一动想到了一套基于状态的缺水检测方法，理论上可以适应不同硬度的水，果断重写了整个功能模块，并在大量验证后加入水泡检测和破坏功能。最终该功能通过产品验收并上市。上市后未收到相关客诉。
   * 基于python开发生产工具解决生产相关问题（wifi信号测试等）
   * 调研即热式热水器加热算法，MPC控制相关学习了解
 ---   
 - 飞控功能算法工程师 · 2015年6月-2020年8月 · 5年  
   [**深圳市大疆创新科技有限公司**](https://www.dji.com/) | **现场办公**  | 深圳
-  * Phantom3、Phantom4、Mavic1、Mavic2、A3 Flight Controller、Mavic mini
-    * NFZ(No Fly Zones) Functionality
-    * Smater Battery Management for Flight Controller
-  * System Architect and Software Middle layer for DJI Flight Controller
-  * System Engineer for Phantom4RTK
-  
-  **Technologies:​**​ RT-Thread, ROS2, Docker, ARM Cortex-M7, STM32H7, CAN bus, Python/C++.
+  * 无人机产品线：
+    * 限飞区功能设计和开发（无人机端限飞数据库管理、解禁证书设计、动态解禁、多边形限飞区限制向量计算）
+    * 飞控智能电量管理（计算续航时间，限制最大功率，返航时间预估，电池认证）
+    * 其他飞控业务功能维护
+  * 飞控应用层架构设计维护和中间件设计维护
+  * 作为系统工程师参与Phantom4RTK项目  
 ---
 #### Education
-- 本科 · 电子科学与技术（固体电子工程） · 2021年9月-2015年6月  
+- 继续教育/认证
+  * 2019年：极客大学算法训练营
+  * 2019年12月：PMI-PBA认证 #2705757
+  * 2019年6月：PMI-ACP认证 #2603257
+  * 2018年3月：PMI-PMP认证 #2190853
+- 本科 · 电子科学与技术（固体电子工程） · 2011年9月-2015年6月  
   [**电子科技大学**](https://www.uestc.edu.cn/) | 成都
+  * 全国大学生机器人科技创新夏令营RoboMaster（DJI RM比赛内测） | 小组组长 | · 2014年7月
+  * 全国大学生机器人竞赛Robocon2014《舐犊情深》| 软件组组长 | 全国一等奖 · 2014年6月
+  * 全国大学生电子设计竞赛《简易旋转倒立摆及其控制装置》 全国二等奖 · 2013年10月
 
 #### Skill & Knowledge
   * **C、Linux C编程、C++编程、CMake、RTOS(RT-Thread, Nuttx)** ： 经验丰富，有较好的实践经验，自主可以解决绝大部分问题，高质量完成
   * **Python编程、Makefile、Bash编程、基于Buildroot构建Linux系统、ROS** : 经验一般，没有摸索到较好的实践经验，能自主解决问题，代码质量合格
   * **PX4飞控** ：经验较少，但对基本原理和系统设计较为了解，可以快速上手
   * **激光SLAM算法**:工程实践能力强，对算法基本原理了解，但没有深度优化算法的经验
-  * **硬件相关**：知道基本原理，可以看懂原理图，有画PCB经验（4层）
+  * **硬件相关**：知道基本原理，可以看懂原理图，有画PCB经验（4层, AD, kicad）
   * **结构相关**：会使用Solidworks进行建模，辅助搭建原型认证
