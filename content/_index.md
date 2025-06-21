@@ -1,5 +1,5 @@
 ---
-title: CV
+title: Resume
 ---
 
 ## 耿畅 
@@ -10,33 +10,37 @@ title: CV
   * 嵌入式团队负责人，嵌入式软件基础设施建设、技术规划、人员能力提升和工作分配
   * 作为系统工程师参与到所有硬件项目的前期设计
   * 手持激光SLAM扫描仪产品 [**SHARE SLAM S20**](https://shareuav.cn/S20)：
-    * 整个提供的系统架构设计，传感器和处理器选型和评估
+    * 负责输出整个系统方案、系统框图
     * 设计嵌入式软件系统方案并且落地
+      * MCU/RTOS侧基于RT-Thread构建的开发平台，重写GD32F470系列BSP；针对公司开发特点修改工程框架；重新设计板级配置方案，取消kconfig的配置方式改用宏头文件的方式实现；参照Linux引入pinctrl驱动来处理io复用问题。
+      * AP/Linux侧SOC为瑞芯微的RK3588，基于瑞芯微SDK的buildroot构建的Linux系统，中间框架使用docker+ROS实现上层业务和算法的快速接入。
+      * 整机OTA方案设计：分为服务固件和系统固件，服务固件内置MCU、雷达等其他模块固件
+      * 生产、调试方案：USB ADB + RNDIS实现进入系统调试、测试固件部署和ROS多机通讯调试，通过vue实现前端页面来实现生产测试、生产数据写入等工作。生产工具内置在设备端内部，不需要单独准备生产环境。
+      * 日志方案：基于ROS日志系统和RK提供的generate_logs脚本导出服务固件日志和系统日志，并且打包到工程文件中
+      * 安全方案：设计整机安全方案，基于非对称加密、密钥派生实现的一机一密方案，也可以做到每次作业的密钥都不同；整个固件加密方案到整个固件打包工作流中，避免手动操作以及方便密钥管理。
     * 负责嵌入式开发相关工作：前期回板验证bringup、生产导入
     * 负责在设备端导入SLAM算法：实时SLAM算法适配
     * 提供PC端后处理的原始版本：基于vcpkg + cmake在windows平台适配数据处理算法，并且设计RESTful API供前端调用。
-  * MCU开发平台：
-    * 基于RT-Thread
-  * AP开发平台：
-    * 基于ROS + Docker
-  * SLAM产品技术预研：
-    * 设计
-  
-  **Technologies:​**​ RT-Thread, ROS, Docker, ARM Cortex-M7, STM32H7, CAN bus, Python/C++.
+    * 整机时间同步方案设计：构建一套异构、多时间源的时间同步方案。设备可以在RTK不管是否存在的时候都可以确保整个传感器的有同一套时间基准（同步时间域），并且可以在各时间基准下转换（例如从同步时间域转换成RTK时间域）。
+    * 相机时间精度验证方案设计：设计一套纯硬件的计数器跑马灯方案，可以准确验证相机的时间同步精度。
  --- 
 - 高级嵌入式软件工程师 · 2021年5月-2022年2月 · 10个月  
   [**深圳市正浩创新科技股份有限公司**](https://www.ecoflow.com/) | **现场办公**  | 深圳
   * 室外小型割草机产品 [**ECOFLOW Blade**](https://www.ecoflow.com/de/blade-robotic-lawn-mower)
-      * Embedded Software Team Leader
-
-  **Technologies:​**​ RT-Thread, ROS2, Docker, ARM Cortex-M7, STM32H7, CAN bus, Python/C++.
+      * 嵌入式组负责人，负责嵌入式系统方案设计和人员招聘
+      * 参与前期原型机调试工作，基于PX4完成割草机基础动作控制来帮助机械结构工程师前期验证
+      * 设计嵌入式平台方案，主要以MCU侧为主，Linux侧当时采用ubuntu的方式
+      * 参与前期产品调研和讨论
+      * 第一版样机bringup
 ---
 - Software Engineer · 2020年8月-2021年5月 · 10个月  
   [**Keurig Dr Pepper**](https://www.keurigdrpepper.com/)  | **现场办公**  | 深圳
-  * K-Express Essentials 
-    * Water Probe Functionality
-  
-  **Technologies:​**​ RT-Thread, ROS2, Docker, ARM Cortex-M7, STM32H7, CAN bus, Python/C++.
+  * 即热式咖啡机产品 [**K-Express Essentials**](https://www.amazon.com/Keurig-K-Express-Essentials-Single-Coffee/dp/B0BMPT81GW)
+    * 设计缺水监测算法：
+      * 此产品设计采用水气路共用的设计，使用探针来检测水位，需要处理不同硬度的水（北美不同地区水质差异较大，且还有使用RO水的情况，ADC数值在不同水质下有很大差异）；以及水气路切换在管路内产生气泡的问题。
+      * 设计了一套基于状态的缺水检测方法，并且加入水泡检测和破坏功能。最终该功能通过产品验收并上市。上市后未收到相关客诉。
+  * 基于python开发生产工具解决生产相关问题（wifi信号测试等）
+  * 调研即热式热水器加热算法，MPC控制相关学习了解
 ---   
 - 飞控功能算法工程师 · 2015年6月-2020年8月 · 5年  
   [**深圳市大疆创新科技有限公司**](https://www.dji.com/) | **现场办公**  | 深圳
@@ -53,17 +57,9 @@ title: CV
   [**电子科技大学**](https://www.uestc.edu.cn/) | 成都
 
 #### Skill & Knowledge
-|技能 |掌握程度|
-|-|-|
-|C / MCU|经验丰富·高效自主|
-|C / Linux编程|熟练应用 · 需辅助验证|
-|C++|熟练应用 · 需辅助验证|
-|Python|熟练应用 · 需辅助验证|
-|Makefile/CMake|熟练应用 · 需辅助验证|
-|Bash|基础实践 · 依赖支持|
-|RTOS:FreeRTOS & RT-Thread & Nuttx|熟练应用 · 需辅助验证|
-|ROS1|熟练应用 · 需辅助验证|
-|ROS2|认知阶段 · 实操高风险|
-|激光SLAM算法|工程实践能力较强，算法理论较弱, 可快速落地各类算法|
-|Simple PCB Design|基础实践 · 依赖支持|
-|SolidWorks|认知阶段 · 实操高风险|
+  * **C、Linux C编程、C++编程、CMake、RTOS(RT-Thread, Nuttx)** ： 经验丰富，有较好的实践经验，自主可以解决绝大部分问题，高质量完成
+  * **Python编程、Makefile、Bash编程、基于Buildroot构建Linux系统、ROS** : 经验一般，没有摸索到较好的实践经验，能自主解决问题，代码质量合格
+  * **PX4飞控** ：经验较少，但对基本原理和系统设计较为了解，可以快速上手
+  * **激光SLAM算法**:工程实践能力强，对算法基本原理了解，但没有深度优化算法的经验
+  * **硬件相关**：知道基本原理，可以看懂原理图，有画PCB经验（4层）
+  * **结构相关**：会使用Solidworks进行建模，辅助搭建原型认证
