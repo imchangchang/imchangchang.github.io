@@ -1,6 +1,5 @@
 ---
 title: 耿畅
-date: 2025-06-23
 ---
 
 济南 | 15820762341 | 10年工作经验 |imchangchang@gmail.com | [Github](https://github.com/imchangchang) | [Gitee](https://gitee.com/imchangchang) | [Linkin](https://www.linkedin.com/in/imchangchang)

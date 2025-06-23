@@ -1,6 +1,5 @@
 ---
 title: Patents
-date: 2025-06-23
 ---
   
 点击链接需要可以访问Google Patenets.  
