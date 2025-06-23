@@ -16,15 +16,9 @@ menu:
     - name: Home
       url: ""
       weight: 1
-    - name: About
-      url: "about/"
+    - name: Resume
+      url: "resume/"
       weight: 2
-    - name: Categories
-      url: "categories/"
-      weight: 3
-    - name: Tags
-      url: "tags/"
-      weight: 4
 
 params:
   footer: "&copy; [GENG Chang](https://c-geng.com) 2015 -- {Year}"
