@@ -10,16 +10,21 @@ body {
   padding: 0; 
   display: flex;
   gap: 10px;
-}
-.article-meta, .menu a {
   text-decoration: none;
   background: #eee;
   padding: 5px;
   border-radius: 5px;
 }
-.menu, .article-meta, footer { text-align: center; }
-.title { font-size: 1.1em; }
+
+.article-meta {
+  margin-top: 1px;
+  text-align: center; 
+}
+
+.menu, footer { text-align: center; }
+.title { font-size: 1em;}
 footer a { text-decoration: none; }
+
 hr {
   border-style: dashed;
   color: #ddd;
