@@ -2,7 +2,7 @@
 title: Patents
 ---
   
-点击链接需要可以访问Google Patenets.  
+点击链接需要能正常访问Google Patents.  
 Click only if you can access Google Patents.
 
 ## SHAREUAV
