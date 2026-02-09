@@ -1,4 +1,4 @@
-baseurl: "https://c-geng.com"  # please update this to your actual URL
+baseurl: "https://my.c-geng.com"  # please update this to your actual URL
 languageCode: "zh"
 title: "耿畅"
 theme: "xmin"
@@ -24,7 +24,7 @@ menu:
       weight: 3
 
 params:
-  footer: "&copy; [GENG Chang](https://c-geng.com) 2015 -- {Year}"
+  footer: "&copy; [GENG Chang](https://my.c-geng.com) 2015 -- {Year}"
 
 markup:
   highlight:
